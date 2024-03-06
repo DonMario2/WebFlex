@@ -2,7 +2,7 @@ body {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     color: #333333;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(255, 240, 201);
 }
 header{
     display: flex;
@@ -10,25 +10,32 @@ header{
     justify-content: space-between;
 }
 
-header img{
+header .logo img{
     width: 100px;
     height: 100px;
     position: sticky;
 }
 
-nav{
+nav ul{
     display: flex;
-    flex-direction: row;
+    list-style-type: none;
+}
+header a{
+    display: inline;
+    margin: 10px;
 }
 
-.nav-right{
-    display: flex;
+header #nav-right form{
+    display: inline;
 }
-div.nav-right a img{
+
+header #nav-right img{
     width: 20px;
     height: 20px;
-    position: sticky;
+    display: inline;
 }
+
+
 
 h1 {
     font-size: 3.8rem;
@@ -48,13 +55,66 @@ h2 span{
     font-weight: bold;
 }
 
-.slides {
-    width: 120px;
-    height: 10px;
-    margin: 50px;
+.slides{
     display: inline-block;
+    position:sticky;
+}
+
+#carouselExampleInterval img{
+    width: 720px;
+    height: 100%;
+    margin: 1px;
+    display: inline;
     
 }
-.slides slide{
+
+main .Center {
     display: flex;
+}
+
+main .Center .Banner img {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+main .Center .ofertas{
+    margin: 10px;
+    padding: 10px;
+}
+main .Center .ofertas img{
+    width: 200px;
+    padding: 20px;
+    display: inline-block;
+}
+
+
+footer{
+    background-color: dimgrey;
+}
+footer .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .info .sociales a{
+    display: block;
+}
+
+footer .info .sociales img{
+    width: 20px;
+}
+footer .texto {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: unset;
+    position: sticky;
+}
+
+footer .texto img{
+    width: 15px;
+    padding: 2px;
 }
