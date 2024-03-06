@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -8,31 +13,50 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 header .logo img{
     width: 100px;
     height: 100px;
     position: sticky;
+    display: inline;
 }
 
 nav ul{
     display: flex;
     list-style-type: none;
+    position: relative;
+    top: 35px;
+    font-weight: bold;
 }
 header a{
     display: inline;
     margin: 10px;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding-top: 100px;
 }
 
 header #nav-right form{
     display: inline;
+    position: relative;
+    top: 35px;
 }
 
-header #nav-right img{
+header #nav-right form img{
+    width: 20px;
+    height: 20px;
+}
+
+header #nav-right a img{
     width: 20px;
     height: 20px;
     display: inline;
+    position: relative;
+    top: 35px;
 }
 
 
@@ -40,6 +64,10 @@ header #nav-right img{
 h1 {
     font-size: 3.8rem;
     text-align: left;
+    margin-left: 20px;
+}
+:hover h1{
+    font-weight: bold;
 }
 
 h2 {
@@ -60,12 +88,8 @@ h2 span{
     position:sticky;
 }
 
-#carouselExampleInterval img{
-    width: 720px;
-    height: 100%;
-    margin: 1px;
-    display: inline;
-    
+main .carousel-inner{
+    display: inline-block;
 }
 
 main .Center {
