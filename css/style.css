@@ -8,12 +8,21 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #333333;
     background-color: rgb(255, 240, 201);
+    display: inline;
+    padding-top: 100px;
+
 }
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(253, 252, 247, 0.507);
+    
 }
 
 header .logo img{
@@ -24,6 +33,7 @@ header .logo img{
 }
 
 nav ul{
+    float: initial;
     display: flex;
     list-style-type: none;
     position: relative;
@@ -40,7 +50,10 @@ header a{
     text-decoration: none;
     padding-top: 100px;
 }
-
+header #nav-right{
+    float: right;
+    flex-direction: row-reverse;
+}
 header #nav-right form{
     display: inline;
     position: relative;
@@ -61,7 +74,8 @@ header #nav-right a img{
 }
 
 
-
+main{
+margin-top: 100px;}
 h1 {
     font-size: 3.8rem;
     text-align: left;
@@ -86,8 +100,10 @@ h2 span{
 }
 
 .slides{
-    display: inline-block;
+    display: block;
     position:sticky;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 main .carousel-inner{
