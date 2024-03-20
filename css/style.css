@@ -168,4 +168,54 @@ footer .texto img {
   display: inline-block;
 }
 
+.contact .heading {
+  font-size: 4rem;
+  color: black;
+  display: block;
+}
+.contact .data {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact .data .content {
+  display: block;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact .data .content iframe {
+  display: flex;
+  height: 400px;
+  width: 400px;
+}
+.contact .data .content .info h3 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: black;
+  padding: 1rem 0;
+  font-weight: normal;
+}
+.contact .data .content .info h3 img {
+  width: 20px;
+  height: 20px;
+}
+.contact .data .content font {
+  display: block;
+}
+.contact .data .content font .box {
+  padding: 1.5rem;
+  margin: 1rem 0;
+  background: rgba(51, 51, 51, 0.2);
+  color: #fff;
+  text-transform: none;
+  font-size: 1.7rem;
+  width: 100%;
+}
+.contact .data .content .messager {
+  height: 15rem;
+  resize: none;
+}
+
 /*# sourceMappingURL=style.css.map */

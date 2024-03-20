@@ -1,68 +1,62 @@
 .contact{
-    padding-top: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    
 
     .heading {
         font-size: 4rem;
         color: black;
-        }
+        display: block;
+    }
     
     .data{
+        padding-top: 25px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         .content {
-            display: flex;
-            align-items: center;
+            display: block;
             justify-content: center;
             flex-wrap: wrap;
-            content {
-                flex: 1 1 30rem;
-                padding: 4rem;
-                padding-bottom: 0;
+        
+                iframe{
+                    display: flex;
+                    height: 400px;
+                    width: 400px;
+                }
                 .info{
                     h3{
                     display: flex;
                     align-items: center;
                     font-size: 2rem;
-                    color: #eee;
+                    color: black;
                     padding: 1rem 0;
                     font-weight: normal;
-                    i{
-                        padding-right: 1rem;
-                        color: var(--yellow);
-                      }
-                      
-                  }
-                  
-
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        }
+                    }
+                
+                }
+                    
+            font{
+                display: block;
+                .box{
+                    padding: 1.5rem;
+                    margin: 1rem 0;
+                    background: #3333;
+                    color: #fff;
+                    text-transform: none;
+                    font-size: 1.7rem;
+                    width: 100%;
                 }
             }
-              
-        }
-        form {
-            flex: 1 1 45rem;
-            padding: 2rem;
-            margin: 2rem;
-            margin-bottom: 4rem;
-            .box{
-                padding: 1.5rem;
-                margin: 1rem 0;
-                background: #3333;
-                color: #fff;
-                text-transform: none;
-                font-size: 1.7rem;
-                width: 100%;
-              }
-              .messager{
+            .messager{
                 height: 15rem;
                 resize: none;
-              }
+            }
               
               
-          }
+        }
           
     }
       
