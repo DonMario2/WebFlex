@@ -1,162 +1,118 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    color: #333333;
-    background-color: rgb(255, 240, 201);
-    display: inline;
-    padding-top: 100px;
-
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #333333;
+  background-color: rgb(255, 240, 201);
+  display: inline;
+  padding-top: 100px;
 }
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-    background-color: rgba(253, 252, 247, 0.507);
-    
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 0;
+  left: 50;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(253, 252, 247, 0.507);
 }
-
-header .logo img{
-    width: 100px;
-    height: 100px;
-    position: sticky;
-    display: inline;
+body header header a {
+  display: inline;
+  text-align: center;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding-top: 100px;
 }
-
-nav ul{
-    float: initial;
-    display: flex;
-    list-style-type: none;
-    position: relative;
-    top: 35px;
-    font-weight: bold;
+body header .logo img {
+  width: 100px;
+  height: 100px;
+  position: sticky;
+  display: inline;
 }
-
-header a{
-    display: inline;
-    margin: 10px;
-    text-align: center;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    padding-top: 100px;
+body header nav ul {
+  float: initial;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  position: relative;
+  top: 35px;
+  font-weight: bold;
+  padding: 0;
 }
-header #nav-right{
-    float: right;
-    flex-direction: row-reverse;
+body header nav ul li a {
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  transition: font-size 0.3s;
 }
-header #nav-right form{
-    display: inline;
-    position: relative;
-    top: 35px;
+body header nav ul li a:hover {
+  font-size: 140%;
 }
-
-header #nav-right form img{
-    width: 20px;
-    height: 20px;
+body header #nav-right {
+  float: right;
+  flex-direction: row-reverse;
 }
-
-header #nav-right a img{
-    width: 20px;
-    height: 20px;
-    display: inline;
-    position: relative;
-    top: 35px;
+body header #nav-right form {
+  display: inline;
+  position: relative;
+  top: 35px;
 }
-
-
-main{
-margin-top: 100px;}
-h1 {
-    font-size: 3.8rem;
-    text-align: left;
-    margin-left: 20px;
+body header #nav-right form img {
+  width: 20px;
+  height: 20px;
+}
+body header #nav-right a img {
+  width: 20px;
+  height: 20px;
+  display: inline;
+  position: relative;
+  top: 35px;
 }
 
-main .Titulo h1:hover{
-    font-weight: bold;
+footer {
+  background-color: dimgrey;
 }
-
-h2 {
-    font-size: 2.8rem;
-    color: #523a34;
-    text-align: center;
-    position: 16rem;
-    margin-left: 16rem;
+footer .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-h2 span{
-    font-size: 4rem;
-    color: #a3081d;
-    font-weight: bold;
+footer .info .MoreInfo a {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding-top: 100px;
 }
-
-.slides{
-    display: block;
-    position:sticky;
-    margin-left: 10%;
-    margin-right: 10%;
+footer .info .sociales {
+  margin-right: 20px;
 }
-
-main .carousel-inner{
-    display: inline-block;
+footer .info .sociales a {
+  display: block;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
 }
-
-main .Center {
-    display: flex;
-}
-
-main .Center .Banner img {
-    display: inline-block;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-main .Center .ofertas{
-    margin: 10px;
-    padding: 10px;
-}
-main .Center .ofertas img{
-    width: 200px;
-    padding: 20px;
-    display: inline-block;
-}
-
-
-footer{
-    background-color: dimgrey;
-}
-footer .info{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-footer .info .sociales a{
-    display: block;
-}
-
-footer .info .sociales img{
-    width: 20px;
+footer .info .sociales img {
+  width: 20px;
 }
 footer .texto {
-    margin-top: 10px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: unset;
-    position: sticky;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: unset;
+  position: sticky;
+}
+footer .texto img {
+  width: 15px;
+  padding: 2px;
 }
 
-footer .texto img{
-    width: 15px;
-    padding: 2px;
-}
+/*# sourceMappingURL=style.css.map */

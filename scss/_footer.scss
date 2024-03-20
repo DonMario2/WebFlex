@@ -1,0 +1,41 @@
+footer{
+    background-color: dimgrey;
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .MoreInfo{
+            a{
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            padding-top: 100px;
+            }
+
+        }
+        .sociales{
+            margin-right: 20px;
+            a{
+                display: block;
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: none;
+                
+            }
+            img{
+                width: 20px;
+            }
+        }
+    }
+    .texto {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: unset;
+        position: sticky;
+        img{
+            width: 15px;
+            padding: 2px;
+        }
+    }
+}
