@@ -7,7 +7,7 @@ body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   color: #333333;
-  background-color: rgba(221, 220, 218, 0.932);
+  background-color: rgb(223, 221, 221);
   display: inline;
   padding-top: 100px;
 }
@@ -20,7 +20,8 @@ body header {
   width: 100%;
   position: fixed;
   z-index: 1000;
-  background-color: rgba(253, 252, 247, 0.507);
+  background-color: rgba(151, 151, 148, 0.692);
+  border-radius: 25px;
 }
 body header header a {
   display: inline;
@@ -59,19 +60,27 @@ body header nav ul li a:hover {
 body header #nav-right {
   float: right;
   flex-direction: row-reverse;
+  padding-right: 30px;
 }
 body header #nav-right form {
   display: inline;
   position: relative;
   top: 35px;
+  padding-right: 15px;
 }
-body header #nav-right form img {
-  width: 20px;
+body header #nav-right form input {
+  border-radius: 10px;
+}
+body header #nav-right form button {
+  border-radius: 20px;
+}
+body header #nav-right form button img {
+  width: 25px;
   height: 20px;
 }
 body header #nav-right a img {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   display: inline;
   position: relative;
   top: 35px;
@@ -90,7 +99,10 @@ footer .info {
   flex-direction: row;
   justify-content: space-between;
 }
-footer .info .MoreInfo a {
+footer .info .MoreInfo ul {
+  list-style: none;
+}
+footer .info .MoreInfo ul a {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
@@ -104,6 +116,7 @@ footer .info .sociales a {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
+  padding: 2px;
 }
 footer .info .sociales img {
   width: 20px;
@@ -120,7 +133,11 @@ footer .texto img {
   padding: 2px;
 }
 
+.index .Titulo {
+  padding-top: 50px;
+}
 .index .Titulo h1 {
+  display: inline;
   font-size: 3.8rem;
   text-align: left;
   margin-left: 20px;
@@ -142,11 +159,12 @@ footer .texto img {
 }
 .index #carouselExampleInterval .carousel-inner {
   display: inline-block;
-  width: 150px;
-  height: 150px;
 }
 .index #carouselExampleInterval .carousel-inner img {
   justify-content: center;
+  width: 600px;
+  height: 400px;
+  margin-top: 10px;
 }
 .index .Center {
   display: flex;
@@ -174,15 +192,13 @@ footer .texto img {
   display: block;
 }
 .contact .data {
-  padding-top: 25px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 .contact .data .content {
-  display: block;
-  justify-content: center;
+  width: 50%;
   flex-wrap: wrap;
+  padding-left: 15px;
 }
 .contact .data .content iframe {
   display: flex;
@@ -195,27 +211,37 @@ footer .texto img {
   font-size: 2rem;
   color: black;
   padding: 1rem 0;
-  font-weight: normal;
+  font-size: 20px;
 }
 .contact .data .content .info h3 img {
   width: 20px;
   height: 20px;
 }
-.contact .data .content font {
-  display: block;
+.contact .data form {
+  width: 50%;
+  display: grid;
+  align-items: center;
+  width: 40%;
+  padding-right: 25px;
 }
-.contact .data .content font .box {
-  padding: 1.5rem;
-  margin: 1rem 0;
+.contact .data form .box {
+  padding: 10px;
+  margin: 0;
   background: rgba(51, 51, 51, 0.2);
   color: #fff;
   text-transform: none;
-  font-size: 1.7rem;
-  width: 100%;
+  font-size: 15px;
+  border-radius: 15px;
 }
-.contact .data .content .messager {
+.contact .data form .box we .messager {
   height: 15rem;
   resize: none;
+}
+.contact .data form button {
+  display: inline;
+  width: fit-content;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */

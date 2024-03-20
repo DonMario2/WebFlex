@@ -6,22 +6,27 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         .MoreInfo{
-            a{
-            color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: none;
-            padding-top: 100px;
+            
+            ul{
+                list-style: none;
+                a{
+                    color: black;
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-decoration: none;
+                    padding-top: 100px;
+                    }
             }
 
         }
         .sociales{
             margin-right: 20px;
+            
             a{
                 display: block;
                 color: black;
                 font-family: Arial, Helvetica, sans-serif;
                 text-decoration: none;
-                
+                padding: 2px;
             }
             img{
                 width: 20px;

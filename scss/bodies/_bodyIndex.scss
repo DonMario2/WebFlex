@@ -1,6 +1,9 @@
 .index{
     .Titulo{
+        padding-top: 50px;
+        
         h1{
+            display: inline;
             font-size: 3.8rem;
             text-align: left;
             margin-left: 20px;
@@ -26,14 +29,16 @@
         
         .carousel-inner{
             display: inline-block;
-            width: 150px;
-  height: 150px;
-  img{
-    justify-content: center;
-  }
+            
+            img{
+                justify-content: center;
+                width: 600px;
+                height: 400px;
+                margin-top: 10px;
+            } 
            
         }
-        }
+    }
     
 
     .Center{
