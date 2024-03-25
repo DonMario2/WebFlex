@@ -1,52 +1,63 @@
 .contact{
-    
 
     .heading {
         font-size: 4rem;
         color: black;
         display: block;
+        text-align: center;
+        justify-items: center;
+        padding-top: 15px;
+        padding-bottom: 10px;
     }
     
     .data{
         display: flex;
         justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
         
         .content {
-            width: 50%;
-            flex-wrap: wrap;
-            padding-left: 15px;
-        
-                iframe{
-                    display: flex;
-                    height: 400px;
-                    width: 400px;
-                }
-                .info{
-                    h3{
-                    display: flex;
-                    align-items: center;
-                    font-size: 2rem;
-                    color: black;
-                    padding: 1rem 0;
-                    font-size: 20px;
-                    img{
-                        width: 20px;
-                        height: 20px;
-                        }
-                    }
+            padding-left: 10%;
+            grid-template-columns: 1fr;
+            @media (max-width: 602px){
+                grid-template-columns: 2fr;
+            }
+            iframe{
+                display: block;
+                height: 400px;
+                width: 400px;
+            }
+            .info{
+                padding-top: 30px;
                 
-                }
+                h3{
+                display: block;
+                align-items: center;
+                font-size: 1.1rem;
+                color: black;
+                font-size: 20px;
+                padding: 5px;
+                
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 4px;
+                    }
+                }     
+            }
                     
         }
-        form{
-            width: 50%;
-            display: grid;
+
+        .Action{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
             align-items: center;
-            width: 40%;
-            padding-right: 25px;
+            margin-right: 10%;
             .box{
+                width: 100%;
                 padding: 10px;
-                margin: 0;
+                margin: 10px;
                 background: #3333;
                 color: #fff;
                 text-transform: none;
@@ -57,12 +68,18 @@
                     resize: none;
                 }
             }
-            button{
+            .btn{
                 display: inline;
                 width: fit-content;
                 align-items: center;
-                background-color:  #3333;
+                background-color: rgb(151, 151, 148);
+                &:hover{
+                    background-color: rgb(68, 68, 68);
+                    color: #fff;
+                    transition: 0.5s;
+                }
             }
         }    
     }
 }
+

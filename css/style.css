@@ -16,20 +16,12 @@ body header {
   flex-direction: row;
   justify-content: space-between;
   top: 0;
-  left: 50;
-  width: 100%;
-  position: fixed;
+  width: 99%;
+  position: sticky;
   z-index: 1000;
   background-color: rgba(151, 151, 148, 0.692);
   border-radius: 25px;
-}
-body header header a {
-  display: inline;
-  text-align: center;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-  padding-top: 100px;
+  margin: 5px;
 }
 body header .logo img {
   width: 100px;
@@ -42,10 +34,10 @@ body header nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  position: relative;
   top: 35px;
   font-weight: bold;
-  padding: 0;
+  padding-top: 35px;
+  align-items: center;
 }
 body header nav ul li a {
   margin: 10px;
@@ -86,13 +78,12 @@ body header #nav-right a img {
   top: 35px;
 }
 
-main {
-  margin-top: 100px;
-}
-
 footer {
+  display: block;
   background-color: dimgrey;
   padding-top: 25px;
+  bottom: 0;
+  width: 100%;
 }
 footer .info {
   display: flex;
@@ -176,78 +167,161 @@ footer .texto img {
   margin-top: 30px;
 }
 .index .Center .ofertas {
-  align-items: center;
-  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 25px 50px;
 }
 .index .Center .ofertas img {
-  padding: 0%;
   width: 200px;
-  padding: 20px;
-  display: inline-block;
-  transition: font-size 0.3s;
+  height: auto;
+  margin: 10px;
+  display: block;
+  transition: transform 0.2s;
 }
 .index .Center .ofertas img:hover {
   box-shadow: 0px 0px 58px 10px rgba(17, 30, 77, 0.7);
   -webkit-box-shadow: 0px 0px 58px 10px rgba(17, 30, 77, 0.7);
   -moz-box-shadow: 0px 0px 58px 10px rgba(17, 30, 77, 0.7);
+  transform: scale(1.05);
+}
+
+.Product {
+  font-size: larger;
+}
+.Product .disponiblidad {
+  margin-top: 20px;
+  display: grid;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.Product .disponiblidad aside {
+  display: flex;
+  width: fit-content;
+  background-color: rgb(199, 197, 197);
+  align-items: center;
+  padding-top: 50px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.Product .disponiblidad aside button {
+  background-color: rgb(180, 180, 180);
+  color: black;
+  margin: 15px;
+  padding: 5px;
+  padding-left: 5px;
+  padding-right: 10px;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.Product .disponiblidad aside button:active {
+  background-color: #bdc4ca;
+  color: rgb(70, 70, 70);
+}
+.Product .disponiblidad .ropa {
+  display: grid;
+  grid-column: span 4;
+  border-radius: 20px;
+  margin-right: 5px;
+  padding: 50px;
+  background-color: rgb(199, 197, 197);
+}
+.Product .disponiblidad .ropa img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  transition: transform 0.2s;
+}
+.Product .disponiblidad .ropa img:hover {
+  box-shadow: 0px 0px 58px 10px rgba(17, 30, 77, 0.7);
+  -webkit-box-shadow: 0px 0px 58px 10px rgba(17, 30, 77, 0.7);
+  -moz-box-shadow: 0px 0px 58px 10px rgba(17, 30, 77, 0.7);
+  transform: scale(1.05);
 }
 
 .contact .heading {
   font-size: 4rem;
   color: black;
   display: block;
+  text-align: center;
+  justify-items: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 .contact .data {
   display: flex;
   justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 .contact .data .content {
-  width: 50%;
-  flex-wrap: wrap;
-  padding-left: 15px;
+  padding-left: 10%;
+  grid-template-columns: 1fr;
+}
+@media (max-width: 602px) {
+  .contact .data .content {
+    grid-template-columns: 2fr;
+  }
 }
 .contact .data .content iframe {
-  display: flex;
+  display: block;
   height: 400px;
   width: 400px;
 }
+.contact .data .content .info {
+  padding-top: 30px;
+}
 .contact .data .content .info h3 {
-  display: flex;
+  display: block;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.1rem;
   color: black;
-  padding: 1rem 0;
   font-size: 20px;
+  padding: 5px;
 }
 .contact .data .content .info h3 img {
   width: 20px;
   height: 20px;
+  margin-right: 4px;
 }
-.contact .data form {
-  width: 50%;
-  display: grid;
+.contact .data .Action {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
   align-items: center;
-  width: 40%;
-  padding-right: 25px;
+  margin-right: 10%;
 }
-.contact .data form .box {
+.contact .data .Action .box {
+  width: 100%;
   padding: 10px;
-  margin: 0;
+  margin: 10px;
   background: rgba(51, 51, 51, 0.2);
   color: #fff;
   text-transform: none;
   font-size: 15px;
   border-radius: 15px;
 }
-.contact .data form .box .messager {
+.contact .data .Action .box .messager {
   height: 15rem;
   resize: none;
 }
-.contact .data form button {
+.contact .data .Action .btn {
   display: inline;
   width: fit-content;
   align-items: center;
-  background-color: rgba(51, 51, 51, 0.2);
+  background-color: rgb(151, 151, 148);
+}
+.contact .data .Action .btn:hover {
+  background-color: rgb(68, 68, 68);
+  color: #fff;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
