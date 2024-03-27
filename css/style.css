@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -192,16 +193,18 @@ footer .texto img {
 }
 .Product .disponiblidad {
   margin-top: 20px;
-  display: grid;
   margin: 5px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 .Product .disponiblidad aside {
-  display: flex;
-  width: fit-content;
+  display: block;
+  position: static;
+  /* display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+  position: static; */
   background-color: rgb(199, 197, 197);
-  align-items: center;
   padding-top: 50px;
   border-radius: 20px;
   margin-right: 10px;
@@ -210,10 +213,8 @@ footer .texto img {
 .Product .disponiblidad aside button {
   background-color: rgb(180, 180, 180);
   color: black;
-  margin: 15px;
+  margin: 10px;
   padding: 5px;
-  padding-left: 5px;
-  padding-right: 10px;
   justify-content: center;
   width: 90%;
   height: auto;
@@ -223,29 +224,51 @@ footer .texto img {
 }
 .Product .disponiblidad aside button:active {
   background-color: #bdc4ca;
-  color: rgb(70, 70, 70);
+  color: rgb(100, 70, 70);
+}
+@media (max-width: 900px) {
+  .Product .disponiblidad aside {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    padding-top: 5px;
+    margin-bottom: 15px;
+    /* Opcional: alinea los elementos horizontalmente */
+  }
 }
 .Product .disponiblidad .ropa {
   display: grid;
   grid-column: span 4;
+  grid-template-columns: repeat(4, 1 fr);
   border-radius: 20px;
   margin-right: 5px;
   padding: 50px;
   background-color: rgb(199, 197, 197);
 }
-.Product .disponiblidad .ropa img {
+.Product .disponiblidad .ropa .mercaderia {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Product .disponiblidad .ropa .mercaderia img {
+  display: flex;
+  flex-direction: row;
   width: 200px;
   height: auto;
   margin: 10px;
   transition: transform 0.2s;
 }
-.Product .disponiblidad .ropa img:hover {
+.Product .disponiblidad .ropa .mercaderia img:hover {
   box-shadow: 0px 0px 58px 10px rgba(17, 30, 77, 0.7);
   -webkit-box-shadow: 0px 0px 58px 10px rgba(17, 30, 77, 0.7);
   -moz-box-shadow: 0px 0px 58px 10px rgba(17, 30, 77, 0.7);
   transform: scale(1.05);
 }
 
+@media screen and (max-width: 900px) {
+  aside {
+    flex-direction: row; /* Cambiar la dirección del flexbox a horizontal */
+  }
+}
 .contact .heading {
   font-size: 4rem;
   color: black;
